@@ -22,14 +22,14 @@ class KelasForm(ModelForm):
         model = models.Kelas
         fields = '__all__'
         
-class Mapel(ModelForm):
+class MapelForm(ModelForm):
     prefix = 'mapel'
     
     class Meta:
         model = models.Mapel
         fields = '__all__'
         
-class BiayaPendaftaran(ModelForm):
+class BiayaPendaftaranForm(ModelForm):
     prefix = 'biaya_pendaftaran'
     
     class Meta:
