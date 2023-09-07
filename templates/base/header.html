@@ -1,10 +1,12 @@
+{% load static %}
+
 <header class="header dark-bg">
     <div class="toggle-nav">
       <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i class="icon_menu"></i></div>
     </div>
 
     <!--logo start-->
-    <a href="#" class="logo">Nice <span class="lite">Admin</span></a>
+    <a href="{% url 'utama:dev' %}" class="logo m-auto"><img src="{% static 'img/smk1.png' %}" class="rounded mx-auto d-block" style="width: 40px;" alt="SMKN 1 Banjar"></a>
     <!--logo end-->
 
     <div class="nav search-row" id="top_menu">
@@ -19,7 +21,7 @@
       <!--  search form end -->
     </div>
 
-    <div class="top-nav notification-row">
+    {% comment %} <div class="top-nav notification-row">
       <!-- notificatoin dropdown start-->
       <ul class="nav pull-right top-menu">
 
@@ -256,6 +258,6 @@
         <!-- user login dropdown end -->
       </ul>
       <!-- notificatoin dropdown end-->
-    </div>
+    </div> {% endcomment %}
   </header>
   <!--header end-->

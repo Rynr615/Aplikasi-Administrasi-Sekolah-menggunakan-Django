@@ -8,6 +8,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('django.contrib.auth.urls')),
     path('', include('utama.urls')),
+    path('siswa/', include('siswa.urls')),
+    path('tagihan/', include('keuangan.urls')),
 ]
 
 if settings.DEBUG :

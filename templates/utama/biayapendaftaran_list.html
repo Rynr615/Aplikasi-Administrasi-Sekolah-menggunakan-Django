@@ -18,7 +18,7 @@ Biaya Pendaftaran {% if messages %}{% for message in messages %}<span class="tex
         {% for object in object_list %}
         <tr>
             <td>{{ object.tahun_pelajaran }}</td>
-            <td>{{ object.uang_masuk }}</td>
+            <td>Rp. {{ object.uang_masuk }}</td>
             <td>
                 <a href="{% url 'utama:bi-add' %}" class="btn btn-primary"><i class="icon_plus_alt2"></i></a>
                 <a href="{% url 'utama:bi-edit' object.id %}" class="btn btn-success"><i class="fa fa-edit"></i></a> 

@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.humanize',
     'widget_tweaks',
     'utama',
+    'siswa',
+    'keuangan',
 ]
 
 MIDDLEWARE = [
